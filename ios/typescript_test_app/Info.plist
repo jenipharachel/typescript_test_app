@@ -38,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -53,5 +53,23 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NeusaNextStd-Bold.ttf</string>
+		<string>NeusaNextStd-Italic.ttf</string>
+		<string>NeusaNextStd-Light.ttf</string>
+		<string>NeusaNextStd-Medium.ttf</string>
+		<string>NeusaNextStd-Regular.ttf</string>
+		<string>NeusaNextStd-Thin.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>SFProDisplay-Bold.ttf</string>
+		<string>SFProDisplay-Italic.ttf</string>
+		<string>SFProDisplay-Light.ttf</string>
+		<string>SFProDisplay-Medium.ttf</string>
+		<string>SFProDisplay-Regular.ttf</string>
+		<string>SFProDisplay-Semibold.ttf</string>
+		<string>SFProDisplay-Thin.ttf</string>
+	</array>
 </dict>
 </plist>

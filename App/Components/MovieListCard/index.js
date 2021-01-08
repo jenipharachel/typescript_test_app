@@ -1,7 +1,16 @@
 import React from 'react';
 import {TouchableOpacity, StyleSheet, View, Text, Image} from 'react-native';
-import {Colors} from '../../Config';
+import {Center, Colors, Fonts} from '../../Config';
 const MovieListCard = ({item, uri, onPress}) => {
+  const textRow = (label, value) => (
+    <View style={{flexDirection: 'row', marginRight: 7}}>
+      <Text style={{fontFamily: Fonts.SFfontBold, marginRight: 5}}>
+        {label}
+      </Text>
+      <Text>{value}</Text>
+    </View>
+  );
+
   return (
     <>
       <TouchableOpacity style={styles.container} onPress={() => onPress()}>
@@ -14,9 +23,11 @@ const MovieListCard = ({item, uri, onPress}) => {
               <Text style={styles.boldText}>{item.title}</Text>
             </View>
             <View style={styles.desc}>
-              <Text>Lang:{item.original_language}</Text>
-              <Text>Votes:{item.vote_count}</Text>
-              <Text>{item.release_date}</Text>
+              {textRow('Lang:', item.original_language)}
+              {textRow('Votes:', item.vote_count)}
+              <Text style={{fontFamily: Fonts.PoppinsfontSemiBold}}>
+                {item.release_date}
+              </Text>
             </View>
             <View style={styles.screen}>
               <Text style={styles.border}>IMAX</Text>
@@ -61,13 +72,14 @@ var styles = StyleSheet.create({
     alignItems: 'center',
   },
   boldText: {
-    fontWeight: 'bold',
     fontSize: 20,
+    fontFamily: Fonts.SFfontBold,
   },
   desc: {
-    flex: 0.2,
+    flex: 0.35,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
+    alignItems: 'center',
   },
   screen: {
     flex: 0.15,

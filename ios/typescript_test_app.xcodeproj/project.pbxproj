@@ -16,6 +16,21 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* typescript_test_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* typescript_test_appTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B99E5396E4EA49D589A84B40 /* NeusaNextStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38076AFD3A6047B5A11F660D /* NeusaNextStd-Bold.ttf */; };
+		2793C77E67F0414E95B1CD65 /* NeusaNextStd-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85D4963F45DB4725925DCF93 /* NeusaNextStd-Italic.ttf */; };
+		B22A076F84EF461BAE970298 /* NeusaNextStd-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74F361666B924B19926B609F /* NeusaNextStd-Light.ttf */; };
+		30B3E9B1E53B48BD9A3A4754 /* NeusaNextStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FA146EA0C884D9FA5AED912 /* NeusaNextStd-Medium.ttf */; };
+		12FF58762526477391D4ADD0 /* NeusaNextStd-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30125558B4C944A9B73A4454 /* NeusaNextStd-Regular.ttf */; };
+		46A71F42E4E342CEA3653352 /* NeusaNextStd-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE29413131BE4F1C921A9726 /* NeusaNextStd-Thin.ttf */; };
+		424CAFC8934A4E658EE8B724 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D39FAACD58C4D7CB47B9EFA /* Poppins-SemiBold.ttf */; };
+		A5A36B00BB894E75B79850A1 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63779C4E3A7B439486963320 /* Roboto-Medium.ttf */; };
+		431F95615FC845D19B23FE58 /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21A96E4FD24546EF86299ABA /* SFProDisplay-Bold.ttf */; };
+		1C27AC6C7B8445238E114BBE /* SFProDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C038DE289AB240E6AF202C83 /* SFProDisplay-Italic.ttf */; };
+		380F2D05198E472D8C9F7F29 /* SFProDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFDA4F8CAC124706A783B692 /* SFProDisplay-Light.ttf */; };
+		5B9DFC5658A044238BBEEA4A /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7315A9B2552A487390CD40E5 /* SFProDisplay-Medium.ttf */; };
+		054C503BD1B24611AE2898D1 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF762612F62847B69A512E90 /* SFProDisplay-Regular.ttf */; };
+		879159FA8E47406A8BC7BB01 /* SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3803A218179F430AA195B737 /* SFProDisplay-Semibold.ttf */; };
+		4B6D9AF6860E406A81647555 /* SFProDisplay-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6D537EE7A27453E8D7E7768 /* SFProDisplay-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +66,21 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = typescript_test_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		38076AFD3A6047B5A11F660D /* NeusaNextStd-Bold.ttf */ = {isa = PBXFileReference; name = "NeusaNextStd-Bold.ttf"; path = "../assets/Fonts/NeusaNextStd-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85D4963F45DB4725925DCF93 /* NeusaNextStd-Italic.ttf */ = {isa = PBXFileReference; name = "NeusaNextStd-Italic.ttf"; path = "../assets/Fonts/NeusaNextStd-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		74F361666B924B19926B609F /* NeusaNextStd-Light.ttf */ = {isa = PBXFileReference; name = "NeusaNextStd-Light.ttf"; path = "../assets/Fonts/NeusaNextStd-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2FA146EA0C884D9FA5AED912 /* NeusaNextStd-Medium.ttf */ = {isa = PBXFileReference; name = "NeusaNextStd-Medium.ttf"; path = "../assets/Fonts/NeusaNextStd-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		30125558B4C944A9B73A4454 /* NeusaNextStd-Regular.ttf */ = {isa = PBXFileReference; name = "NeusaNextStd-Regular.ttf"; path = "../assets/Fonts/NeusaNextStd-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE29413131BE4F1C921A9726 /* NeusaNextStd-Thin.ttf */ = {isa = PBXFileReference; name = "NeusaNextStd-Thin.ttf"; path = "../assets/Fonts/NeusaNextStd-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3D39FAACD58C4D7CB47B9EFA /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/Fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		63779C4E3A7B439486963320 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../assets/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21A96E4FD24546EF86299ABA /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Bold.ttf"; path = "../assets/Fonts/SFProDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C038DE289AB240E6AF202C83 /* SFProDisplay-Italic.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Italic.ttf"; path = "../assets/Fonts/SFProDisplay-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BFDA4F8CAC124706A783B692 /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Light.ttf"; path = "../assets/Fonts/SFProDisplay-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7315A9B2552A487390CD40E5 /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Medium.ttf"; path = "../assets/Fonts/SFProDisplay-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF762612F62847B69A512E90 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Regular.ttf"; path = "../assets/Fonts/SFProDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3803A218179F430AA195B737 /* SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Semibold.ttf"; path = "../assets/Fonts/SFProDisplay-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A6D537EE7A27453E8D7E7768 /* SFProDisplay-Thin.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Thin.ttf"; path = "../assets/Fonts/SFProDisplay-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +170,7 @@
 				00E356EF1AD99517003FC87E /* typescript_test_appTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				833895890F0041EE9303D8FC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,6 +187,29 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		833895890F0041EE9303D8FC /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				38076AFD3A6047B5A11F660D /* NeusaNextStd-Bold.ttf */,
+				85D4963F45DB4725925DCF93 /* NeusaNextStd-Italic.ttf */,
+				74F361666B924B19926B609F /* NeusaNextStd-Light.ttf */,
+				2FA146EA0C884D9FA5AED912 /* NeusaNextStd-Medium.ttf */,
+				30125558B4C944A9B73A4454 /* NeusaNextStd-Regular.ttf */,
+				EE29413131BE4F1C921A9726 /* NeusaNextStd-Thin.ttf */,
+				3D39FAACD58C4D7CB47B9EFA /* Poppins-SemiBold.ttf */,
+				63779C4E3A7B439486963320 /* Roboto-Medium.ttf */,
+				21A96E4FD24546EF86299ABA /* SFProDisplay-Bold.ttf */,
+				C038DE289AB240E6AF202C83 /* SFProDisplay-Italic.ttf */,
+				BFDA4F8CAC124706A783B692 /* SFProDisplay-Light.ttf */,
+				7315A9B2552A487390CD40E5 /* SFProDisplay-Medium.ttf */,
+				AF762612F62847B69A512E90 /* SFProDisplay-Regular.ttf */,
+				3803A218179F430AA195B737 /* SFProDisplay-Semibold.ttf */,
+				A6D537EE7A27453E8D7E7768 /* SFProDisplay-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -295,6 +349,21 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				B99E5396E4EA49D589A84B40 /* NeusaNextStd-Bold.ttf in Resources */,
+				2793C77E67F0414E95B1CD65 /* NeusaNextStd-Italic.ttf in Resources */,
+				B22A076F84EF461BAE970298 /* NeusaNextStd-Light.ttf in Resources */,
+				30B3E9B1E53B48BD9A3A4754 /* NeusaNextStd-Medium.ttf in Resources */,
+				12FF58762526477391D4ADD0 /* NeusaNextStd-Regular.ttf in Resources */,
+				46A71F42E4E342CEA3653352 /* NeusaNextStd-Thin.ttf in Resources */,
+				424CAFC8934A4E658EE8B724 /* Poppins-SemiBold.ttf in Resources */,
+				A5A36B00BB894E75B79850A1 /* Roboto-Medium.ttf in Resources */,
+				431F95615FC845D19B23FE58 /* SFProDisplay-Bold.ttf in Resources */,
+				1C27AC6C7B8445238E114BBE /* SFProDisplay-Italic.ttf in Resources */,
+				380F2D05198E472D8C9F7F29 /* SFProDisplay-Light.ttf in Resources */,
+				5B9DFC5658A044238BBEEA4A /* SFProDisplay-Medium.ttf in Resources */,
+				054C503BD1B24611AE2898D1 /* SFProDisplay-Regular.ttf in Resources */,
+				879159FA8E47406A8BC7BB01 /* SFProDisplay-Semibold.ttf in Resources */,
+				4B6D9AF6860E406A81647555 /* SFProDisplay-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

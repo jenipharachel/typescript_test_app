@@ -4,12 +4,6 @@ import {Colors, Fonts, Metrics, Center} from '../../Config';
 import {Header} from '../../Components';
 
 const MovieList = (props) => {
-  //   const [movieList, setMovieList] = useState([]);
-  //   const [loading, setLoading] = useState(true);
-  //   const [refreshing, setRefreshing] = useState(false);
-  //   const [pageNo, setPageNo] = useState(1);
-  //   const [totalPages, setTotalPages] = useState(0);
-
   const renderContent = () => {
     let uri = `https://image.tmdb.org/t/p/w500/${props.route.params.item.poster_path}`;
     return (
@@ -22,30 +16,30 @@ const MovieList = (props) => {
             <Text style={styles.boldText}>{props.route.params.item.title}</Text>
           </View>
           <View style={styles.desc}>
-            <Text>{props.route.params.item.overview}</Text>
-            <Text>Avg. Vote: {props.route.params.item.vote_average}</Text>
-            <Text>Release Date: {props.route.params.item.release_date}</Text>
+            <Text style={{fontFamily: Fonts.NeusafontRegular, fontSize: 16}}>
+              {props.route.params.item.overview}
+            </Text>
+            {textRow('Avg. Vote:', props.route.params.item.vote_average)}
+            {textRow('Release Date:', props.route.params.item.release_date)}
           </View>
         </View>
       </View>
     );
   };
 
-  //   const renderLoading = () => (
-  //     <View style={{flex: 1, ...Center}}>
-  //       <Text style={{fontFamily: Fonts.NeusafontMedium, fontSize: 20}}>
-  //         Loading...
-  //       </Text>
-  //     </View>
-  //   );
+  const textRow = (label, value) => (
+    <View style={{flexDirection: 'row', marginRight: 7}}>
+      <Text style={{fontFamily: Fonts.SFfontBold, marginRight: 5}}>
+        {label}
+      </Text>
+      <Text>{value}</Text>
+    </View>
+  );
 
   return (
     <View style={{flex: 1, backgroundColor: Colors.White}}>
       <Header title={'Movie Details'} {...props} />
-      <View style={{flex: 0.9, marginVertical: 10}}>
-        {renderContent()}
-        {/* {loading ? renderLoading() : renderContent()} */}
-      </View>
+      <View style={{flex: 0.9, marginVertical: 10}}>{renderContent()}</View>
     </View>
   );
 };
@@ -75,8 +69,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   boldText: {
-    fontWeight: 'bold',
     fontSize: 20,
+    fontFamily: Fonts.SFfontBold,
   },
   desc: {
     flex: 0.6,
