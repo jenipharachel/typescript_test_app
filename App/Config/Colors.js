@@ -1,0 +1,23 @@
+const Colors = {
+  White: '#ffffff',
+  Black: '#000000',
+  Aqua: '#56C4CF',
+  Aquabg: 'rgba(63, 182,220, 0.2)',
+  NavPurple: '#7540ee',
+  ButtonPurple: '#831F82',
+  LightGray: '#757e88',
+  Green: '#70b056',
+  DarkBlue: '#1754f5',
+  Completed: '#2dc76d',
+  Completedbg: '#e9f9f0',
+  Live: '#ffb300',
+  Livebg: 'rgba(255, 179, 0, 0.26)',
+  Elephant: '#2a3743',
+  TextboxBG: '#f6f7f9',
+  TransBG: 'rgb(246,247,249)',
+  OtpText: 'rgba(44, 45, 50, 0.4)',
+  Brand: '#343286',
+  Brandbg: 'rgba(52, 50, 134, 0.2)',
+  LightBorder: '#a3a3a3',
+};
+export default Colors;
