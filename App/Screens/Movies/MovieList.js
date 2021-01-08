@@ -8,11 +8,8 @@ import {
   RefreshControl,
   ActivityIndicator,
 } from 'react-native';
-import {Colors, Fonts, Styles, Metrics, Center} from '../../Config';
+import {Colors, Fonts, Metrics, Center} from '../../Config';
 import {Header, MovieListCard} from '../../Components';
-// Button,
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
 import {MovieApi} from '../../Services';
 
 const MovieList = (props) => {
@@ -40,11 +37,11 @@ const MovieList = (props) => {
     });
   };
 
-  //   const movetoDetailPage = (navigation, item) => {
-  //     navigation.navigate('MovieDetail', {
-  //       item: item,
-  //     });
-  //   };
+  const movetoDetailPage = (navigation, item) => {
+    navigation.navigate('MovieDetails', {
+      item: item,
+    });
+  };
 
   const onRefresh = useCallback(() => {
     setRefreshing(true);
@@ -71,7 +68,7 @@ const MovieList = (props) => {
             index={index}
             uri={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
             // viewMovie={this.viewMovie}
-            // onPress={() => movetoDetailPage(props.navigation, item)}
+            onPress={() => movetoDetailPage(props.navigation, item)}
           />
         )}
         keyExtractor={(item, index) => index.toString()}
@@ -93,7 +90,6 @@ const MovieList = (props) => {
 
   const renderLoading = () => (
     <View style={{flex: 1, ...Center}}>
-      {/* <Image source={Images.LogoLoader} /> */}
       <Text style={{fontFamily: Fonts.NeusafontMedium, fontSize: 20}}>
         Loading...
       </Text>

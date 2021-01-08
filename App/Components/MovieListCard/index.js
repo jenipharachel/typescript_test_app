@@ -1,20 +1,10 @@
 import React from 'react';
-import {
-  TouchableOpacity,
-  StyleSheet,
-  View,
-  Text,
-  Image,
-  ColorPropType,
-} from 'react-native';
+import {TouchableOpacity, StyleSheet, View, Text, Image} from 'react-native';
 import {Colors} from '../../Config';
-const MovieListCard = ({item, uri}) => {
+const MovieListCard = ({item, uri, onPress}) => {
   return (
     <>
-      <TouchableOpacity
-        style={styles.container}
-        // onPress={() => onPress()}
-      >
+      <TouchableOpacity style={styles.container} onPress={() => onPress()}>
         <View style={styles.row}>
           <View style={styles.col1}>
             <Image source={{uri}} style={styles.image} />
