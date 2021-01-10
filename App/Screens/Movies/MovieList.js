@@ -67,7 +67,6 @@ const MovieList = (props) => {
             item={item}
             index={index}
             uri={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
-            // viewMovie={this.viewMovie}
             onPress={() => movetoDetailPage(props.navigation, item)}
           />
         )}

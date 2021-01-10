@@ -1,8 +1,16 @@
 import React from 'react';
 import {TouchableOpacity, StyleSheet, View, Text, Image} from 'react-native';
 import {Center, Colors, Fonts} from '../../Config';
-const MovieListCard = ({item, uri, onPress}) => {
-  const textRow = (label, value) => (
+const MovieListCard = ({
+  item,
+  uri,
+  onPress,
+}: {
+  item: any;
+  uri: string;
+  onPress: () => void;
+}) => {
+  const textRow = (label: string, value: string) => (
     <View style={{flexDirection: 'row', marginRight: 7}}>
       <Text style={{fontFamily: Fonts.SFfontBold, marginRight: 5}}>
         {label}
@@ -30,9 +38,9 @@ const MovieListCard = ({item, uri, onPress}) => {
               </Text>
             </View>
             <View style={styles.screen}>
-              <Text style={styles.border}>IMAX</Text>
-              <Text style={styles.border}>4D</Text>
-              <Text style={styles.border}>3D</Text>
+              <Text style={styles.box}>IMAX</Text>
+              <Text style={styles.box}>4D</Text>
+              <Text style={styles.box}>3D</Text>
             </View>
           </View>
         </View>
@@ -86,8 +94,7 @@ var styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
-  border: {
-    borderColor: 'black',
+  box: {
     borderWidth: 1,
     padding: 5,
     borderRadius: 5,
