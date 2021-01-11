@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 import {Colors, Fonts, Metrics, Center} from '../../Config';
 import {Header} from '../../Components';
 
-const MovieList = (props) => {
+const MovieDetails = (props: any) => {
   const renderContent = () => {
     let uri = `https://image.tmdb.org/t/p/w500/${props.route.params.item.poster_path}`;
     return (
@@ -27,7 +27,7 @@ const MovieList = (props) => {
     );
   };
 
-  const textRow = (label, value) => (
+  const textRow = (label: string, value: string) => (
     <View style={{flexDirection: 'row', marginRight: 7}}>
       <Text style={{fontFamily: Fonts.SFfontBold, marginRight: 5}}>
         {label}
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MovieList;
+export default MovieDetails;

@@ -12,9 +12,8 @@ import {Colors, Fonts, Metrics, Center} from '../../Config';
 import {Header, MovieListCard} from '../../Components';
 import {MovieApi} from '../../Services';
 
-const MovieList = (props) => {
-  console.log(props, 'props what');
-  const [movieList, setMovieList] = useState([]);
+const MovieList = (props: any) => {
+  const [movieList, setMovieList] = useState<null | any>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [pageNo, setPageNo] = useState(1);
@@ -30,7 +29,7 @@ const MovieList = (props) => {
     };
   }, []);
 
-  const getMovieList = async (pageNo) => {
+  const getMovieList = async (pageNo: number) => {
     MovieApi.movieList(pageNo).then((res) => {
       setMovieList([...movieList, ...res.results]);
       setLoading(false);
@@ -38,7 +37,7 @@ const MovieList = (props) => {
     });
   };
 
-  const movetoDetailPage = (navigation, item) => {
+  const movetoDetailPage = (navigation: any, item: object) => {
     navigation.navigate('MovieDetails', {
       item: item,
     });
@@ -66,7 +65,7 @@ const MovieList = (props) => {
         renderItem={({item, index}) => (
           <MovieListCard
             item={item}
-            index={index}
+            key={index}
             uri={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
             onPress={() => movetoDetailPage(props.navigation, item)}
           />
