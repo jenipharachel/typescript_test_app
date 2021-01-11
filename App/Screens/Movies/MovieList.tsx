@@ -12,8 +12,25 @@ import {Colors, Fonts, Metrics, Center} from '../../Config';
 import {Header, MovieListCard} from '../../Components';
 import {MovieApi} from '../../Services';
 
+interface Movie {
+  adult: boolean;
+  backdrop_path: string;
+  genre_ids: Array<number>;
+  id: number;
+  original_language: string;
+  original_title: string;
+  overview: string;
+  popularity: number;
+  poster_path: string;
+  release_date: string;
+  title: string;
+  video: boolean;
+  vote_average: number;
+  vote_count: number;
+}
+
 const MovieList = (props: any) => {
-  const [movieList, setMovieList] = useState<null | any>([]);
+  const [movieList, setMovieList] = useState<Array<Movie>>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [pageNo, setPageNo] = useState(1);
@@ -96,6 +113,7 @@ const MovieList = (props: any) => {
   );
 
   const renderFooter = () => {
+    console.log(props, 'props');
     return <ActivityIndicator size="large" color={Colors.ButtonPurple} />;
   };
 
