@@ -13,6 +13,7 @@ import {Header, MovieListCard} from '../../Components';
 import {MovieApi} from '../../Services';
 
 const MovieList = (props) => {
+  console.log(props, 'props what');
   const [movieList, setMovieList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -108,7 +109,7 @@ const MovieList = (props) => {
 
   return (
     <View style={{flex: 1, backgroundColor: Colors.White}}>
-      <Header title={'Movie List'} {...props} />
+      <Header title={'Movie List'} pop={props.navigation.pop} />
       <View style={{flex: 0.9, marginVertical: 10}}>
         {loading ? renderLoading() : renderContent()}
       </View>

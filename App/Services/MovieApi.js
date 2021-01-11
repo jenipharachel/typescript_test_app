@@ -17,12 +17,15 @@ const getEnvUrl = async () => {
 export default class MovieApiHelper {
   static movieList(pageNo) {
     let responseval = getEnvUrl().then((baseurl) => {
+      let url = baseurl
+        ? baseurl
+        : `https://api.themoviedb.org/3/movie/popular`;
       const requestObj = {
         method: 'GET',
         headers: {...reqHeader},
       };
       return fetch(
-        `${baseurl}?api_key=f9340678aa6a61a60578f56c8f272f61&page=${pageNo}`,
+        `${url}?api_key=f9340678aa6a61a60578f56c8f272f61&page=${pageNo}`,
         requestObj,
       )
         .then((response) => {

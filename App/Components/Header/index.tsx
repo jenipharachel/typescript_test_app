@@ -1,15 +1,26 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
 import {Colors, Fonts, Center} from '../../Config';
-// import MatComIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-// import {CommonActions} from '@react-navigation/native';
+import MatComIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const Header = ({title, props}: {title: string; props: any}) => {
+const Header = ({title, pop}: {title: string; pop: () => void}) => {
   return (
     <View style={styles.header}>
-      <View style={{flex: 1, justifyContent: 'center'}}>
+      <View style={{flex: 0.15, ...Center}}>
+        {title == 'Movie Details' && (
+          <TouchableOpacity style={{marginLeft: 0}} onPress={() => pop()}>
+            <MatComIcon
+              name="keyboard-backspace"
+              size={27}
+              color={Colors.White}
+            />
+          </TouchableOpacity>
+        )}
+      </View>
+      <View style={{flex: 0.7, ...Center}}>
         <Text style={styles.title}>{title}</Text>
       </View>
+      <View style={{flex: 0.15}} />
     </View>
   );
 };
